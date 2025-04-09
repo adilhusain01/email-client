@@ -44,7 +44,7 @@ function App() {
             <GoogleLogin
               flow="auth-code"
               ux_mode="redirect"
-              redirect_uri="http://localhost:5000/api/auth/google/callback"
+              redirect_uri="https://spamshield.vercel.app/"
               scope="https://www.googleapis.com/auth/gmail.readonly https://www.googleapis.com/auth/gmail.modify"
               onSuccess={() => {}} // Google handles redirect
               onError={() => setStatus("Login failed")}
